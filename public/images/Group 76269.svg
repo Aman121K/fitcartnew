@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.241" height="30.386" viewBox="0 0 21.241 30.386">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.889" y1="0.961" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f54a00"/>
+      <stop offset="1" stop-color="#ffab87"/>
+    </linearGradient>
+    <filter id="mobile-alt" x="0" y="0" width="21.241" height="30.386" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#fc8b5a" flood-opacity="0.271"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_76269" data-name="Group 76269" transform="translate(-568.373 -8655)">
+    <g transform="matrix(1, 0, 0, 1, 568.37, 8655)" filter="url(#mobile-alt)">
+      <path id="mobile-alt-2" data-name="mobile-alt" d="M12.955,0H2.286A2.287,2.287,0,0,0,0,2.286V22.1a2.287,2.287,0,0,0,2.286,2.286H12.955A2.287,2.287,0,0,0,15.241,22.1V2.286A2.287,2.287,0,0,0,12.955,0ZM7.62,22.861a1.524,1.524,0,1,1,1.524-1.524A1.522,1.522,0,0,1,7.62,22.861Zm5.334-5.144a.573.573,0,0,1-.572.572H2.858a.573.573,0,0,1-.572-.572V2.858a.573.573,0,0,1,.572-.572h9.526a.573.573,0,0,1,.572.572Z" transform="translate(3)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

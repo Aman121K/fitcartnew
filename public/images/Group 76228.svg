@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114" height="114" viewBox="0 0 114 114">
+  <defs>
+    <filter id="Ellipse_74" x="0" y="0" width="114" height="114" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_76228" data-name="Group 76228" transform="translate(-266.5 -2270.5)">
+    <g transform="matrix(1, 0, 0, 1, 266.5, 2270.5)" filter="url(#Ellipse_74)">
+      <circle id="Ellipse_74-2" data-name="Ellipse 74" cx="34.5" cy="34.5" r="34.5" transform="translate(22.5 17.5)" fill="#fff"/>
+    </g>
+    <g id="Group_76227" data-name="Group 76227">
+      <path id="chevron-down_2" data-name="chevron-down 2" d="M8.934,11.445.312,2.823a1.065,1.065,0,0,1,0-1.506L1.317.312a1.065,1.065,0,0,1,1.5,0L9.687,7.143,16.552.31a1.065,1.065,0,0,1,1.5,0l1.006,1.006a1.065,1.065,0,0,1,0,1.506l-8.622,8.622A1.065,1.065,0,0,1,8.934,11.445Z" transform="translate(317.622 2332.187) rotate(-90)" fill="#f54a00"/>
+    </g>
+  </g>
+</svg>

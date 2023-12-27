@@ -1,0 +1,848 @@
+:root {
+  --primary-bg-color: #00ADEF;
+  --secondary-bg-color: #FFFFFF;
+  --primary-text-color: #333333;
+  --secondary-text-color: #FFFFFF;
+  --accent-color: #FFA000;
+  --font-stack: 'Arial', sans-serif;
+  --base-padding: 20px;
+  --base-font-size: 16px;
+  --header-height: 60px;
+}
+
+body {
+  font-family: var(--font-stack);
+  margin: 0;
+  padding: 0;
+  font-size: var(--base-font-size);
+}
+
+.site-header {
+  background-color: var(--primary-bg-color);
+  color: var(--secondary-text-color);
+  padding-bottom: var(--base-padding);
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--base-padding) var(--base-padding) 0 var(--base-padding);
+  height: var(--header-height);
+}
+
+.logo {
+  height: 50px; /* Adjust based on actual logo size */
+}
+
+.search-bar input[type="search"] {
+  padding: var(--base-padding);
+  border-radius: 20px;
+  border: none;
+  width: 50%;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 20px;
+  color: var(--secondary-text-color);
+  padding: 10px 20px;
+  margin-left: var(--base-padding);
+  cursor: pointer;
+}
+
+.cart img {
+  width: 32px; /* Size of cart icon */
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li a {
+  color: var(--primary-text-color);
+  padding: var(--base-padding);
+  text-decoration: none;
+  display: block;
+}
+
+.deals-button {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--secondary-text-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--base-padding);
+  background-image: url('http://localhost:3000/getImage?w=1792&h=768'); /* Adjust based on actual banner size */
+  background-size: cover;
+}
+
+.promo-text h1 {
+  font-size: 2.5rem;
+  color: var(--secondary-text-color);
+}
+
+.article-button {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 20px;
+  color: var(--secondary-text-color);
+  padding: 10px 20px;
+  margin-top: var(--base-padding);
+  cursor: pointer;
+}
+
+.promo-deals .deal {
+  background-color: var(--secondary-bg-color);
+  padding: var(--base-padding);
+  text-align: center;
+  margin: var(--base-padding);
+}
+
+.promo-deals h2 {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+
+.promo-deals p {
+  color: var(--primary-text-color);
+}
+
+.shop-now {
+  background-color: var(--primary-bg-color);
+  border: none;
+  border-radius: 20px;
+  color: var(--secondary-text-color);
+  padding: 10px 20px;
+  margin-top: var(--base-padding);
+  cursor: pointer;
+}
+
+/* screen 2 */
+
+
+.background-text {
+  position: absolute;
+  color: #e1e1e1;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.trending-section,
+.category-section {
+  position: relative;
+  margin: var(--base-padding) 0;
+}
+
+.trending-products,
+.category-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-item,
+.category-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: var(--base-padding);
+  margin: var(--base-padding);
+  background-color: var(--secondary-bg-color);
+}
+
+.product-info,
+.category-info {
+  padding-left: var(--base-padding);
+  text-align: left;
+}
+
+.product-info h3,
+.category-info h3 {
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+.trending-text {
+  top: 20%; /* Adjust as needed for alignment */
+  left: 5%; /* Adjust as needed for alignment */
+}
+
+.category-text {
+  top: 70%; /* Adjust as needed for alignment */
+  left: 5%; /* Adjust as needed for alignment */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .background-text {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .trending-products,
+  .category-products {
+    flex-direction: column;
+  }
+
+  .product-item,
+  .category-item {
+    flex-direction: column;
+  }
+
+  .product-info,
+  .category-info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .trending-text,
+  .category-text {
+    font-size: 3rem;
+    line-height: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* screen 3 */
+
+
+.proteins-sports-nutrition {
+  background-color: var(--secondary-bg-color);
+  padding: var(--base-padding);
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  color: var(--secondary-text-color);
+  padding: var(--base-padding);
+  border-radius: 20px;
+  margin-bottom: var(--base-padding);
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.section-heading .shop-all {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+}
+
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: var(--base-padding);
+}
+
+.product {
+  width: 200px; /* Adjust based on actual product image size */
+  text-align: center;
+  padding: var(--base-padding);
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: var(--secondary-bg-color);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--base-padding);
+}
+
+.product h3 {
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  margin-bottom: var(--base-padding);
+}
+
+.product .price {
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  margin-bottom: var(--base-padding);
+}
+
+.product .add-to-cart {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* screen 4 */
+
+
+.wellness-section {
+  background-color: #0073e6; /* Adjust based on the actual blue background color */
+  padding: var(--base-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-heading {
+  color: #fff;
+  padding: var(--base-padding) 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+}
+
+.wellness-carousel-container {
+  padding-top: 60px; /* Adjust this value so the heading doesn't overlap the products */
+}
+
+.left-arrow,
+.right-arrow {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left-arrow {
+  left: 15px;
+}
+
+.right-arrow {
+  right: 15px;
+}
+
+.product-carousel {
+  display: flex;
+  gap: var(--base-padding);
+  padding: var(--base-padding) var(--base-padding) var(--base-padding) 45px; /* Adjust left padding to ensure content isn't hidden behind left arrow */
+  overflow-x: scroll;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  padding: var(--base-padding);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: relative;
+  margin-right: var(--base-padding); /* Space between product cards */
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 1rem;
+  margin: var(--base-padding) 0;
+}
+
+.product .price {
+  font-size: 1.2rem;
+  color: #000;
+  margin: var(--base-padding) 0;
+}
+
+.product .add-to-cart {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: var(--base-padding);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add a smooth scrolling effect for the product carousel */
+.product-carousel {
+  scroll-behavior: smooth;
+}
+
+
+/* screen 6 */
+/* Knowledge Hub Section */
+.knowledge-hub {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff; /* Assuming white background */
+  color: #000; /* Main text color */
+}
+
+.knowledge-hub h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000; /* Title color */
+}
+
+.knowledge-hub p {
+  margin: 10px 0 20px; /* Spacing adjusted */
+  color: #555; /* Subtitle color */
+}
+
+.hub-categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.category-button {
+  background-color: #f8f8f8; /* Light grey background */
+  border: 2px solid #dcdcdc; /* Light grey border */
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000; /* Button text color */
+}
+
+.category-button.active,
+.category-button:hover {
+  border-color: #007bff; /* Highlight color for active button or on hover */
+}
+
+.hub-articles {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Adjusted gap between articles */
+}
+
+.article-item {
+  width: 200px; /* Adjusted width for article items */
+}
+
+.article-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px; /* Adjusted spacing */
+}
+
+.article-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000; /* Article title color */
+}
+
+.article-item p {
+  font-size: 14px;
+  color: #666; /* Article description color */
+}
+
+.view-all {
+  display: block;
+  margin-top: 30px;
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* screen 6 */
+.consultation-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.consultation-header h2 {
+  font-size: 2em;
+  color: #000;
+}
+
+.consultation-header p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.consultation-badge {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.consultation-carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 15px;
+}
+
+.right-arrow {
+  right: 15px;
+}
+
+.consultation-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.consultation-card {
+  width: 280px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.consultation-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.consultation-card .quote {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.consultation-card h3 {
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.carousel-progress {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.progress-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.progress-indicator.active {
+  background-color: #000;
+}
+
+/* screen 7 */
+.testimonials-section {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #e6f4f9; /* Light blue background or any other color as per your design */
+}
+
+.testimonials-header h2 {
+  font-size: 2em;
+  color: #10375C; /* Dark blue color for the heading */
+}
+
+.testimonial-highlight {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+
+.featured-athlete {
+  width: 50%; /* Adjust as per your design */
+  border-radius: 50%;
+}
+
+.testimonial-quote {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: absolute;
+  right: -100px; /* Adjust as per your design */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%; /* Adjust as per your design */
+}
+
+.testimonial-quote p:first-child {
+  font-size: 1em;
+  color: #666;
+  quotes: "“" "”" "‘" "’";
+}
+
+.testimonial-quote p:first-child:before,
+.testimonial-quote p:first-child:after {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.testimonial-quote p:first-child:after {
+  content: close-quote;
+}
+
+.testimonial-quote h3 {
+  font-size: 1.5em;
+  color: #000;
+  margin-top: 10px;
+}
+
+.testimonial-quote p:last-child {
+  font-size: 1em;
+  color: #10375C;
+}
+
+.testimonial-profiles {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.athlete-profile {
+  width: 100px; /* Small profile images */
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 30px;
+  color: #10375C;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* screen 8 */
+
+.why-fitcart {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+.why-fitcart h2 {
+  font-size: 2.5em;
+  color: #333; /* Dark grey color for the heading */
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature-item {
+  text-align: center;
+  max-width: 150px;
+}
+
+.feature-item img {
+  width: 80px; /* Adjust based on the image size */
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.feature-item p {
+  font-size: 0.85em;
+  color: #666;
+}
+
+
+/* screen footer */
+.footer {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark text for good contrast */
+  padding: 40px 0;
+  font-family: Arial, sans-serif; /* Example font */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 20px;
+}
+
+.brand-statement h2 {
+  font-size: 1.5em;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+.brand-statement p {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.brand-statement strong {
+  font-size: 1.2em;
+  color: #e53935; /* Red color for emphasis */
+}
+
+.certifications img,
+.contact-info img,
+.app-links img {
+  /*width: 50px;  Adjust as necessary */
+  height: 50px; /* Adjust as necessary */
+  margin: 0 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info a {
+  color: #0275d8; /* Bootstrap's default blue */
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.app-links a {
+  margin: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-section h3 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.nav-section a {
+  color: #0275d8;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.legal-links a {
+  color: #0275d8;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.social-links a {
+  margin: 0 5px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  font-size: 0.75em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content, .footer-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-nav {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-section {
+    margin-bottom: 20px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .legal-links {
+    margin-bottom: 20px;
+  }
+}
+
